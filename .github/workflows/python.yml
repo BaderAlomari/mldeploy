@@ -32,4 +32,4 @@ jobs:
         
     - name: Test with pytest
       run: |
-        pytest tests/  # Make sure this matches your test directory structure
+        pytest tests/  
