@@ -32,4 +32,4 @@ jobs:
         
     - name: Test with pytest
       run: |
-        pytest test_model.py test_api.py
+        $env:PYTHONPATH="." ; pytest test_model.py test_api.py
