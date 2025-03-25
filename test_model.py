@@ -21,7 +21,7 @@ categorial_features = [
 
 def test_categorical_features_present():
     """test all categorical features exist in the dataset."""
-    data = pd.read_csv('data/census_clean.csv')
+    data = pd.read_csv('data/census.csv')
     for feature in categorial_features:
         assert feature in data.columns, f"{feature} was not found in dataset columns."
 

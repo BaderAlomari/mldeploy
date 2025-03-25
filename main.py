@@ -109,7 +109,6 @@ class features(BaseModel):
             ]
         }}
 
-# Instantiate the app.
 app = FastAPI()
 
 @app.get("/")
@@ -123,12 +122,12 @@ lb = joblib.load("model/lb.pkl")
 categorial_features = [
     "workclass",
     "education",
-    "marital-status",
+    "marital_status",  
     "occupation",
     "relationship",
     "race",
     "sex",
-    "native-country",
+    "native_country" 
 ]
 
 @app.post("/predictions")
