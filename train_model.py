@@ -26,7 +26,8 @@ cat_features = [
     "native_country",
 ]
 X_train, y_train, encoder, lb = process_data(
-    train, categorical_features=cat_features, label="salary", training=True
+    train, categorical_features=cat_features, label="salary", training=True,
+    
 )
 
 # Proces the test data with the process_data function.
@@ -34,7 +35,9 @@ X_test, y_test, _, _ = process_data(
     test, categorical_features=cat_features, label="salary", training=False,
     encoder=encoder, lb=lb
 )
+
 # Train and save a model.
+
 model = train_model(X_train, y_train)
 
 joblib.dump(model, 'model/model.pkl')
