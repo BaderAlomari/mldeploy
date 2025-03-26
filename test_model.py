@@ -11,12 +11,12 @@ from sklearn.ensemble import RandomForestClassifier
 categorial_features = [
     "workclass",
     "education",
-    "marital-status",
+    "marital_status",
     "occupation",
     "relationship",
     "race",
     "sex",
-    "native-country",
+    "native_country",
 ]
 
 def test_categorical_features_present():

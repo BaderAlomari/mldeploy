@@ -122,12 +122,12 @@ lb = joblib.load("model/lb.pkl")
 categorial_features = [
     "workclass",
     "education",
-    "marital_status",  
+    "marital_status",
     "occupation",
     "relationship",
     "race",
     "sex",
-    "native_country" 
+    "native_country",
 ]
 
 @app.post("/predictions")
