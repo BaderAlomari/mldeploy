@@ -113,7 +113,7 @@ app = FastAPI()
 
 @app.get("/")
 async def greetings():
-    return "Welcome to Census Bureau Classifier API"
+    return "Welcome!"
 
 model = joblib.load("model/model.pkl")
 encoder = joblib.load("model/encoder.pkl")
