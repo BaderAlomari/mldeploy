@@ -142,5 +142,4 @@ async def predictor(body: features):
     
     return lb.inverse_transform(pred)[0]
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 8000))
-    uvicorn.run('main:app', port=port, reload=True)
+    uvicorn.run('main:app', host='0.0.0.0', port=10000, reload=True)
