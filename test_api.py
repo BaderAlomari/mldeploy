@@ -6,7 +6,7 @@ client = TestClient(app)
 def test_get_greeting():
     response = client.get("/")
     assert response.status_code == 200
-    assert response.json() == "Welcome to Census Bureau Classifier API"
+    assert response.json() == "Welcome!"
     
 def test_predict_low_income():
     """test model prediction for <=50K case"""
