@@ -24,8 +24,6 @@ headers = {
 }
 
 request = requests.post(url, json=test_data, headers=headers)
-print(request)
-exit()
 assert request.status_code == 200
 print(request.status_code)
 print(request.json())
