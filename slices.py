@@ -7,12 +7,12 @@ from sklearn.model_selection import train_test_split
 categorial_features = [
     "workclass",
     "education",
-    "marital-status",
+    "marital_status",
     "occupation",
     "relationship",
     "race",
     "sex",
-    "native-country",
+    "native_country",
 ]
 
 model = joblib.load("model/model.pkl")
